@@ -1,0 +1,18 @@
+version: 0.1
+id: a-guided-tour-of-go
+tags: golang, cloud-native
+title: A Guided Tour of Go
+author:
+  name: Serdar Kalayci
+  photo: https://avatars.githubusercontent.com/u/14258482?v=4
+  bio: Experienced Chief Solutions Architect with a demonstrated history of working in the information technology and services industry. Enthusiastic practitioner of Agile, Lean and good engineering practices. Skilled in Mongodb, Redis, Docker, Kubernetes, Golang, C#, Functional and Object-Oriented Programming (OOP). Strong engineering professional with a Bachelor of Science (BS) focused in Software development from Yildiz Technical University.
+  social:
+    twitter: "@oakin"
+    linkedin: serdarkalayci
+description: |
+  A - Guided - Tour of Go is a great starting point for anyone who wants to learn Go.
+difficulty: easy
+estimatedTime: 3 hours
+container:
+  image: ubuntu:latest
+coverImage: https://novasta.com.tr/wp-content/uploads/go-programlama-dili-gopher-novasta.png

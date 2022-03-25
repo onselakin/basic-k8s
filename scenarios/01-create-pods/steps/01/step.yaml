@@ -1,0 +1,10 @@
+title: Packages & Imports
+layout:
+  allowNewTerminals: false
+  defaultTerminals:
+    - id: some-id
+      allowClose: false
+      cwd: /root
+volumeTarget: /step1
+scripts:
+  shell: bash
