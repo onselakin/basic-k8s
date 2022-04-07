@@ -6,6 +6,6 @@ layout:
       title: New Terminal
       allowClose: false
       cwd: /var/log
-volumeTarget: /create-pods
+volumeName: /create-pods
 scripts:
   shell: bash

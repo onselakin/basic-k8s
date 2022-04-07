@@ -14,6 +14,17 @@ In terms of Docker concepts, a Pod is similar to a group of Docker containers wi
 ### Using Pods
 The following is an example of a Pod which consists of a container running the image nginx:1.14.2.
 
+This is an include:
+```go
+~{
+  file: sample.go
+}~
+```
+
+Execute the file with ``~{ executable: true }~go run step1/sample.go``
+
+The following is an example of a Pod which consists of a container running the image nginx:1.14.2.
+
 ```yaml
 ~{
   title: Sample yaml file
@@ -33,15 +44,23 @@ spec:
 
 To create the Pod shown above, run the following command:
 
-```bash
+```yaml
 ~{
-  title: Create a pod by using kubectl
-  executable: true
-  targetTerminal: some-id
-  hint: You need to use kubectl to make this work!
+  title: Sample yaml file
+  clipboard: true
 }~
-ls -al
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
 ```
+
 
 Pods are generally not created directly and are created using workload resources. See Working with Pods for more information on how Pods are used with workload resources.
 
