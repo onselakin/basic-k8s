@@ -7,7 +7,7 @@ difficulty: easy
 estimatedTime: 3 hours
 container:
   image: kubectl:latest
-requiresCluster: true
+requiresCluster: false
 coverImage: lab.jpeg
 author:
   name: Container Solutions
